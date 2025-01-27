@@ -1,0 +1,155 @@
+/* Algemene reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigatiebalk */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #ff007c, #ffb700);
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .logo span {
+    color: #ffe100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffe100;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+/* Hero-sectie */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: url('/images/dental-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-section h1 span {
+    color: #ff007c;
+    font-style: italic;
+}
+
+.hero-section .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff007c;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background: #ffe100;
+}
+
+/* Secties */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #ff007c;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: #ff007c;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Contactformulier */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ff007c;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background: #ff007c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #ffe100;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #ff007c;
+    color: white;
+    padding: 10px 0;
+}
